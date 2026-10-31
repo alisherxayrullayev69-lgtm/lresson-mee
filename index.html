@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh sahifa - GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MODAL OYNALAR UCHUN CHECKBOXLAR (Bular yashirin bo'ladi, kartani bosganda ishlaydi) -->
+    <input type="checkbox" id="modal-toggle-1" class="modal-checkbox">
+    <input type="checkbox" id="modal-toggle-2" class="modal-checkbox">
+    <input type="checkbox" id="modal-toggle-3" class="modal-checkbox">
+    <input type="checkbox" id="modal-toggle-4" class="modal-checkbox">
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html" class="active"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="./statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="./malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="./kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="#"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <h1>Xush kelibsiz, Sardor! 👋</h1>
+                    <div class="date-badge">
+                        <span>📅 Bugun: 24-May, 2024 - Juma</span>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">SA</div>
+                    <div class="user-info">
+                        <span class="name">Sardor Alimov</span>
+                        <span class="role">Faol a'zo</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="welcome-banner">
+                <p>«Katta yutuqlar har kungi kichik odatlarning yig'indisidir.»</p>
+                <span class="author">— Jeyma Klir (Atom odatlar)</span>
+            </div>
+
+            <!-- 4 TA STATISTIKA KARTASI (Bosganda mos modal ochiladi) -->
+            <div class="stats-grid">
+                <!-- 1. Bugungi unumdorlik kartasi -->
+                <label for="modal-toggle-1" class="stat-card clickable">
+                    <div class="stat-header">
+                        <span>Bugungi unumdorlik</span>
+                        <span class="icon-circle">🎯</span>
+                    </div>
+                    <h2>75%</h2>
+                    <p>6/5 vazifa bajarildi (Batafsil)</p>
+                </label>
+
+                <!-- 2. Bajarilgan jami vazifalar kartasi -->
+                <label for="modal-toggle-2" class="stat-card clickable">
+                    <div class="stat-header">
+                        <span>Bajarilgan jami vazifalar</span>
+                        <span class="icon-circle">✅</span>
+                    </div>
+                    <h2>284 ta</h2>
+                    <p><span class="green-text">+12%</span> o'tgan haftaga nisbatan</p>
+                </label>
+
+                <!-- 3. Faol shaxsiy maqsadlar kartasi -->
+                <label for="modal-toggle-3" class="stat-card clickable">
+                    <div class="stat-header">
+                        <span>Faol shaxsiy maqsadlar</span>
+                        <span class="icon-circle">📌</span>
+                    </div>
+                    <h2>5 ta</h2>
+                    <p><span class="purple-text">2 tasi</span> yakunlanish arafasida</p>
+                </label>
+
+                <!-- 4. Uzluksiz odat seriyasi kartasi -->
+                <label for="modal-toggle-4" class="stat-card clickable">
+                    <div class="stat-header">
+                        <span>Uzluksiz odat seriyasi</span>
+                        <span class="icon-circle">🔥</span>
+                    </div>
+                    <h2>14 kun 🔥</h2>
+                    <p>Rekord natija: 21 kun</p>
+                </label>
+            </div>
+
+            <!-- O'rta va pastki qismlar (Oldingidek) -->
+            <div class="content-grid">
+                <div class="section-box">
+                    <div class="box-header">
+                        <h3>Bugungi kunlik rejalar</h3>
+                        <span class="sub-count">3/5 rejalashtirilgan</span>
+                    </div>
+                    <ul class="task-list">
+                        <li>
+                            <div class="task-info">
+                                <span class="time">07:00</span>
+                                <div>
+                                    <strong>Ertalabki yugurish va badantarbiya</strong>
+                                    <div class="tags"><span class="tag salomatlik">Salomatlik</span> <span class="tag red">Yuqori muhimlik</span></div>
+                                </div>
+                            </div>
+                            <span class="badge success">Tugatildi</span>
+                        </li>
+                        <li>
+                            <div class="task-info">
+                                <span class="time">09:30</span>
+                                <div>
+                                    <strong>Ingliz tili: 20 ta yangi so'z va matn tahlili</strong>
+                                    <div class="tags"><span class="tag rivojlanish">Til o'rganish</span> <span class="tag orange">O'rtacha</span></div>
+                                </div>
+                            </div>
+                            <span class="badge success">Tugatildi</span>
+                        </li>
+                        <li>
+                            <div class="task-info">
+                                <span class="time">11:00</span>
+                                <div>
+                                    <strong>GrowUp loyihasi arxitekturasini tasdiqlash</strong>
+                                    <div class="tags"><span class="tag it">Ish / IT</span> <span class="tag red">Yuqori</span></div>
+                                </div>
+                            </div>
+                            <span class="badge success">Tugatildi</span>
+                        </li>
+                        <li>
+                            <div class="task-info">
+                                <span class="time">14:30</span>
+                                <div>
+                                    <strong>Moliyaviy hisobotlarni yangilash va xarajatlar tahlili</strong>
+                                    <div class="tags"><span class="tag moliya">Moliya</span> <span class="tag orange">O'rtacha</span></div>
+                                </div>
+                            </div>
+                            <span class="badge warning">Jarayonda</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-box">
+                    <div class="box-header">
+                        <h3>Yaqin maqsadlar</h3>
+                        <a href="#" class="link-all">Barchasi →</a>
+                    </div>
+                    <ul class="goals-list">
+                        <li>
+                            <div class="goal-top">
+                                <strong>IELTS 7.5 sertifikatini olish</strong>
+                                <span class="percent">68%</span>
+                            </div>
+                            <p class="goal-sub">📅 Muddat: 15-Iyul, 2024 • 52 kun qoldi</p>
+                            <div class="progress-bar"><div class="fill" style="width: 68%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="goal-top">
+                                <strong>Frontend va React dasturlash</strong>
+                                <span class="percent">82%</span>
+                            </div>
+                            <p class="goal-sub">📅 Muddat: 30-Avgust, 2024 • Yakunlanish arafasida</p>
+                            <div class="progress-bar"><div class="fill" style="width: 82%;"></div></div>
+                        </li>
+                        <li>
+                            <div class="goal-top">
+                                <strong>Shaxsiy jamg'arma: $5,000</strong>
+                                <span class="percent">45%</span>
+                            </div>
+                            <p class="goal-sub">📅 Muddat: 31-Dekabr, 2024</p>
+                            <div class="progress-bar"><div class="fill" style="width: 45%;"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================================== -->
+    <!-- 4 TA MODAL OYNA (PURES CSS POPUPS) -->
+    <!-- ========================================================== -->
+
+    <!-- MODAL 1: Bugungi unumdorlik tafsilotlari -->
+    <div class="modal-overlay" id="modal-1">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>📊 Bugungi unumdorlik tahlili (75%)</h3>
+                <label for="modal-toggle-1" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Bugungi kunda rejalashtirilgan vazifalar va ularning umumiy unumdorlikka ta'sir foizlari:</p>
+                <ul class="modal-list">
+                    <li>
+                        <span>✅ Ertalabki yugurish va badantarbiya</span>
+                        <span class="badge success">+15% ta'sir</span>
+                    </li>
+                    <li>
+                        <span>✅ Ingliz tili: 20 ta yangi so'z tahlili</span>
+                        <span class="badge success">+15% ta'sir</span>
+                    </li>
+                    <li>
+                        <span>✅ GrowUp arxitekturasini tasdiqlash</span>
+                        <span class="badge success">+20% ta'sir</span>
+                    </li>
+                    <li>
+                        <span>✅ Jamoaviy uchrashuv va sprint</span>
+                        <span class="badge success">+15% ta'sir</span>
+                    </li>
+                    <li>
+                        <span>⏳ Moliyaviy hisobotlarni yangilash</span>
+                        <span class="badge warning">Jarayonda (Kutilmoqda)</span>
+                    </li>
+                    <li>
+                        <span>❌ Shaxsiy kundalikka xulosa yozish</span>
+                        <span class="badge danger">Bajarilmadi</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Bajarilgan jami vazifalar (284 ta) -->
+    <div class="modal-overlay" id="modal-2">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>✅ Bajarilgan barcha vazifalar ro'yxati (284 ta)</h3>
+                <label for="modal-toggle-2" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">Joriy oydagi eng muhim bajarilgan vazifalar tarixi:</p>
+                <ul class="modal-list">
+                    <li><span>🔥 React komponentlarini optimizatsiya qilish</span> <span class="date-tag">23-May</span></li>
+                    <li><span>🔥 Ingliz tilida 2 soatlikspeaking amaliyoti</span> <span class="date-tag">22-May</span></li>
+                    <li><span>🔥 Algoritmlar bo'yicha 5 ta masalani yechish</span> <span class="date-tag">21-May</span></li>
+                    <li><span>🔥 Dizaynmaketlarini Figma'dan ko'chirish</span> <span class="date-tag">20-May</span></li>
+                    <li><span>🔥 Jamoa bilan haftalik planning o'tkazish</span> <span class="date-tag">19-May</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Faol shaxsiy maqsadlar (5 ta) -->
+    <div class="modal-overlay" id="modal-3">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>📌 Faol shaxsiy maqsadlar tafsiloti (5 ta)</h3>
+                <label for="modal-toggle-3" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <ul class="modal-list">
+                    <li>
+                        <div>
+                            <strong>1. IELTS 7.5 sertifikatini olish</strong>
+                            <p class="sub-text">Holati: Faol jarayonda (68%)</p>
+                        </div>
+                        <span class="badge success">Bajarilmoqda</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>2. Frontend va React mutaxassisi bo'lish</strong>
+                            <p class="sub-text">Holati: Yakunlanish arafasida (82%)</p>
+                        </div>
+                        <span class="badge success">Bajarilmoqda</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>3. Shaxsiy jamg'arma: $5,000 to'plash</strong>
+                            <p class="sub-text">Holati: Boshlang'ich bosqich (45%)</p>
+                        </div>
+                        <span class="badge warning">Jarayonda</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>4. Universitet Magistraturasiga kirish</strong>
+                            <p class="sub-text">Holati: Hujjatlar tayyorlanmoqda</p>
+                        </div>
+                        <span class="badge warning">Jarayonda</span>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>5. Har kuni 30 daqiqa kitob o'qish odati</strong>
+                            <p class="sub-text">Holati: Doimiy ravishda bajarilmoqda</p>
+                        </div>
+                        <span class="badge success">Faol</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: Uzluksiz odat seriyasi va Taqvim (14 kun) -->
+    <div class="modal-overlay" id="modal-4">
+        <div class="modal-box calendar-modal">
+            <div class="modal-header">
+                <h3>🔥 Uzluksiz odat seriyasi va Taqvim (14 kun)</h3>
+                <label for="modal-toggle-4" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">May 2024 — Ketma-ket 14 kunlik muvaffaqiyatli seriya taqvimi:</p>
+                
+                <div class="calendar-grid-mini">
+                    <div class="cal-day inactive">11</div>
+                    <div class="cal-day inactive">12</div>
+                    <div class="cal-day inactive">13</div>
+                    <div class="cal-day inactive">14</div>
+                    <div class="cal-day inactive">15</div>
+                    <div class="cal-day inactive">16</div>
+                    <div class="cal-day inactive">17</div>
+                    <div class="cal-day streak">18</div>
+                    <div class="cal-day streak">19</div>
+                    <div class="cal-day streak">20</div>
+                    <div class="cal-day streak">21</div>
+                    <div class="cal-day streak">22</div>
+                    <div class="cal-day streak">23</div>
+                    <div class="cal-day today-marked">24 📍</div>
+                    <div class="cal-day future">25</div>
+                    <div class="cal-day future">26</div>
+                </div>
+                <p class="calendar-note">📍 <b>24-May (Bugun)</b> — Odatlar muvaffaqiyatli bajarildi va seriya davom etmoqda!</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+     <li><a href="index.html" class="active"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="./statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="./malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="./kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+ <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowUp - Ro'yxatdan o'tish</title>
+    <link rel="stylesheet" href="login.css"> <!-- Dizayn birxilligi uchun login.css ni ulash mumkin -->
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo-area">
+                <h2>🚀 GrowUp</h2>
+                <p>Yangi hisob yaratish</p>
+            </div>
+
+            <!-- Ro'yxatdan o'tgandan so'ng index.html ga o'tadi -->
+            <form action="index.html" method="GET">
+                <div class="input-group">
+                    <label for="fullname">To'liq ism-sharifingiz</label>
+                    <input type="text" id="fullname" placeholder="Sardor Alimov" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Elektron pochta</label>
+                    <input type="email" id="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Parol yaratish</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Hisob yaratish</button>
+            </form>
+
+            <div class="register-link">
+                Hisobingiz bormi? <a href="login.html">Tizimga kirish</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

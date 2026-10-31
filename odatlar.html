@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foydali odatlar – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="odatlar.css">
+</head>
+<body>
+
+    <!-- YASHIRIN CHECKBOXLAR (Modal oynalar uchun) -->
+    <input type="checkbox" id="modal-habit" class="modal-checkbox">
+    <input type="checkbox" id="modal-streak" class="modal-checkbox">
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html" class="active"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="#"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="#"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="#"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="#"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <!-- Tepa qidiruv va profil paneli -->
+            <header class="top-header-kr">
+                <div class="header-search">
+                    <input type="text" placeholder="Vazifalar, maqsadlar yoki maqolalarni qidirish...">
+                </div>
+                <div class="header-right">
+                    <label for="modal-streak" class="streak-badge clickable-badge">🔥 14 kunlik seriya</label>
+                    <label for="modal-habit" class="btn-primary clickable-btn">+ Yangi vazifa</label>
+                    <div class="user-profile">
+                        <div class="avatar">SA</div>
+                        <div class="user-info">
+                            <span class="name">Sardor Alimov</span>
+                            <span class="role">Faol a'zo</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sarlavha paneli -->
+            <div class="page-title-row">
+                <div>
+                    <span class="top-tag">✨ SHAXSIY INTIZOM TIZIMI</span>
+                    <h1>Foydali odatlar trekeri</h1>
+                    <p class="sub-title"><i>"Intizom — bu xohlagan narsangiz va hozir xohlayotgan narsangiz o'rtasidagi tanlovdir."</i></p>
+                </div>
+                <div class="action-buttons">
+                    <div class="month-selector">
+                        <span>📅 May, 2024</span>
+                    </div>
+                    <!-- Yangi odat qo'shish tugmasi -->
+                    <label for="modal-habit" class="btn-primary-lg clickable-btn">+ Yangi odat qo'shish</label>
+                </div>
+            </div>
+
+            <!-- 3 ta statistika kartasi -->
+            <div class="stats-grid-habits">
+                <div class="habit-stat-card">
+                    <div>
+                        <small>BUGUNGI ODATLAR HOLATI</small>
+                        <h2>5 / 6 <small>bajarildi</small></h2>
+                        <p class="green-sub">Bugun 83% marra fathi</p>
+                    </div>
+                    <div class="circle-progress">83%</div>
+                </div>
+
+                <div class="habit-stat-card">
+                    <div>
+                        <small>ENG UZUN SERIYA</small>
+                        <h2>🔥 28 kun</h2>
+                        <p class="sub-gray">Kitob mutolaasi bo'yicha</p>
+                    </div>
+                    <div class="icon-square orange">🔥</div>
+                </div>
+
+                <div class="habit-stat-card">
+                    <div>
+                        <small>O'RTACHA INTIZOM KO'RSATKICHI</small>
+                        <h2>91% <small class="text-green">+6.2%</small></h2>
+                        <p class="sub-gray">O'tgan haftaga nisbatan</p>
+                    </div>
+                    <div class="icon-square purple">📈</div>
+                </div>
+            </div>
+
+            <!-- Haftalik monitoring matritsasi (Jadval) -->
+            <div class="section-box-matrix">
+                <div class="matrix-head">
+                    <div>
+                        <h3>Haftalik monitoring matritsasi</h3>
+                        <p class="box-desc">20-may — 26-may oraliq kundalik natijalari</p>
+                    </div>
+                    <div class="matrix-legend">
+                        <span><i class="dot green"></i> Bajarilgan</span>
+                        <span><i class="dot light-gray"></i> Kutilmoqda</span>
+                    </div>
+                </div>
+
+                <table class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th>Odat nomi</th>
+                            <th>Kategoriya</th>
+                            <th>Dush<br><small>20</small></th>
+                            <th>Sesh<br><small>21</small></th>
+                            <th>Chor<br><small>22</small></th>
+                            <th>Pay<br><small>23</small></th>
+                            <th class="today-col">Juma<br><small>24</small></th>
+                            <th>Shan<br><small>25</small></th>
+                            <th>Yak<br><small>26</small></th>
+                            <th>Haftalik foiz</th>
+                            <th>Seriya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>🔹 Kitob o'qish (kamida 20 bet)</strong></td>
+                            <td><span class="cat-tag purple">Bilim</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td class="today-col"><span class="chk green">✓</span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><b>85%</b> <div class="mini-bar"><div class="fill" style="width: 85%;"></div></div></td>
+                            <td><span class="streak-pill">🔥 14 kun</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>🟢 Sport bilan shug'ullanish (45 daqiqa)</strong></td>
+                            <td><span class="cat-tag green">Salomatlik</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk red">✕</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td class="today-col"><span class="chk green">✓</span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><b>78%</b> <div class="mini-bar"><div class="fill" style="width: 78%;"></div></div></td>
+                            <td><span class="streak-pill">🔥 4 kun</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>🔵 Ingliz tilini o'rganish (30 daqiqa)</strong></td>
+                            <td><span class="cat-tag blue">Rivojlanish</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td class="today-col"><span class="chk green">✓</span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><b>92%</b> <div class="mini-bar"><div class="fill" style="width: 92%;"></div></div></td>
+                            <td><span class="streak-pill">🔥 21 kun</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>🟢 Vaqtida uxlash (23:00 gacha)</strong></td>
+                            <td><span class="cat-tag orange">Rejim</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td class="today-col"><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><b>70%</b> <div class="mini-bar"><div class="fill" style="width: 70%;"></div></div></td>
+                            <td><span class="streak-pill">🔥 5 kun</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>🟢 Kuniga 2 litr toza suv ichish</strong></td>
+                            <td><span class="cat-tag green">Salomatlik</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td class="today-col"><span class="chk green">✓</span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><b>100%</b> <div class="mini-bar"><div class="fill green-fill" style="width: 100%;"></div></div></td>
+                            <td><span class="streak-pill">🔥 18 kun</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>🟤 Ertalab 06:00 da uyg'onish</strong></td>
+                            <td><span class="cat-tag yellow">Intizom</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td><span class="chk green">✓</span></td>
+                            <td class="today-col"><span class="chk green">✓</span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><span class="chk empty"></span></td>
+                            <td><b>88%</b> <div class="mini-bar"><div class="fill" style="width: 88%;"></div></div></td>
+                            <td><span class="streak-pill">🔥 12 kun</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pastki Oylik Intizom xaritasi va Eng yaxshi yutuqlar -->
+            <div class="bottom-grid-habits">
+                <div class="section-box">
+                    <div class="box-header">
+                        <div>
+                            <h3>Oylik intizom xaritasi (May 2024)</h3>
+                            <p class="box-desc">Kunlik odatlar bajarilish jadvali va barqarorlik dinamikasi</p>
+                        </div>
+                        <div class="heat-legend">
+                            <span>Kam</span>
+                            <span class="h-dot l1"></span>
+                            <span class="h-dot l2"></span>
+                            <span class="h-dot l3"></span>
+                            <span>Ko'p</span>
+                        </div>
+                    </div>
+
+                    <div class="month-heatmap">
+                        <div class="hm-day">1 <small>67%</small></div>
+                        <div class="hm-day max">2 <small>100%</small></div>
+                        <div class="hm-day mid">3 <small>83%</small></div>
+                        <div class="hm-day mid">4 <small>83%</small></div>
+                        <div class="hm-day max">5 <small>100%</small></div>
+                        <div class="hm-day max">6 <small>100%</small></div>
+                        <div class="hm-day mid">7 <small>83%</small></div>
+                        <div class="hm-day max">8 <small>100%</small></div>
+                        <div class="hm-day">9 <small>67%</small></div>
+                        <div class="hm-day max">10 <small>100%</small></div>
+                        <div class="hm-day mid">11 <small>83%</small></div>
+                        <div class="hm-day max">12 <small>100%</small></div>
+                        <div class="hm-day max">13 <small>100%</small></div>
+                        <div class="hm-day max">14 <small>100%</small></div>
+                        <div class="hm-day mid">15 <small>83%</small></div>
+                        <div class="hm-day max">16 <small>100%</small></div>
+                        <div class="hm-day max">17 <small>100%</small></div>
+                        <div class="hm-day mid">18 <small>67%</small></div>
+                        <div class="hm-day max">19 <small>100%</small></div>
+                        <div class="hm-day max">20 <small>100%</small></div>
+                        <div class="hm-day mid">21 <small>83%</small></div>
+                        <div class="hm-day max">22 <small>100%</small></div>
+                        <div class="hm-day max">23 <small>100%</small></div>
+                        <div class="hm-day today-hm">24 🔥</div>
+                        <div class="hm-day future">25</div>
+                        <div class="hm-day future">26</div>
+                    </div>
+
+                    <div class="heatmap-foot">
+                        <span>Oylik o'rtacha: <b>91.4% mukammal intizom</b></span>
+                        <span class="text-green"><b>22 kun to'liq seriya</b></span>
+                    </div>
+                </div>
+
+                <div class="right-achievements">
+                    <div class="section-box">
+                        <div class="box-header">
+                            <h3>Eng yaxshi yutuqlar</h3>
+                            <span class="trophy-icon">🏆</span>
+                        </div>
+                        <ul class="achieve-list">
+                            <li>
+                                <div class="rank-num green">1</div>
+                                <div>
+                                    <strong>Kuniga 2 litr toza suv ichish</strong>
+                                    <p>Bu oyda 100% bajarildi — mukammal</p>
+                                </div>
+                                <span class="badge success">100%</span>
+                            </li>
+                            <li>
+                                <div class="rank-num blue">2</div>
+                                <div>
+                                    <strong>Ingliz tilini o'rganish</strong>
+                                    <p>21 kun uzluksiz o'qish seriyasi</p>
+                                </div>
+                                <span class="streak-pill">🔥 21 kun</span>
+                            </li>
+                            <li>
+                                <div class="rank-num purple">3</div>
+                                <div>
+                                    <strong>Ertalab 06:00 da uyg'onish</strong>
+                                    <p>O'tgan haftaga qaraganda +12% o'sish</p>
+                                </div>
+                                <span class="text-purple">+12%</span>
+                            </li>
+                        </ul>
+
+                        <div class="tip-box">
+                            💡 <b>Maslahat:</b> Kechki rejimni yaxshilash uchun 22:30 dan so'ng barcha ekranlarni o'chirishni sinab ko'ring.
+                        </div>
+                    </div>
+
+                    <div class="philosophy-card">
+                        <small>ODATLAR FALSALASI</small>
+                        <h3>21 kun — odat, 90 kun — turmush tarzi</h3>
+                        <p>Har bir mayda qadam katta marralar poydevoridir.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================================== -->
+    <!-- INTERAKTIV MODAL OYNALAR -->
+    <!-- ========================================================== -->
+
+    <!-- 1. Yangi odat qo'shish modali -->
+    <div class="modal-overlay" id="popup-habit">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>⭐ Yangi odat qo'shish</h3>
+                <label for="modal-habit" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="event.preventDefault(); alert('Yangi odat muvaffaqiyatli saqlandi!');">
+                    <div class="form-group-modal">
+                        <label>Odat nomi</label>
+                        <input type="text" placeholder="Masalan: Kuniga 20 bet kitob o'qish..." required>
+                    </div>
+                    <div class="form-group-modal">
+                        <label>Kategoriya</label>
+                        <select>
+                            <option>Salomatlik</option>
+                            <option>Bilim va Ta'lim</option>
+                            <option>Rivojlanish</option>
+                            <option>Rejim va Intizom</option>
+                        </select>
+                    </div>
+                    <div class="form-group-modal">
+                        <label>Kunlik maqsad (Takrorlanish)</label>
+                        <input type="text" placeholder="Masalan: Har kuni 1 mahaldan" required>
+                    </div>
+                    <button type="submit" class="btn-submit-modal">Odatni saqlash</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. 14 kunlik seriya modali -->
+    <div class="modal-overlay" id="popup-streak">
+        <div class="modal-box calendar-modal">
+            <div class="modal-header">
+                <h3>🔥 14 kunlik uzluksiz seriya taqvimi</h3>
+                <label for="modal-streak" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">May 2024 — Barcha odatlar bo'yicha barqarorlik ko'rsatkichi:</p>
+                
+                <div class="calendar-grid-mini">
+                    <div class="cal-day inactive">11</div>
+                    <div class="cal-day inactive">12</div>
+                    <div class="cal-day inactive">13</div>
+                    <div class="cal-day inactive">14</div>
+                    <div class="cal-day inactive">15</div>
+                    <div class="cal-day inactive">16</div>
+                    <div class="cal-day inactive">17</div>
+                    <div class="cal-day streak">18</div>
+                    <div class="cal-day streak">19</div>
+                    <div class="cal-day streak">20</div>
+                    <div class="cal-day streak">21</div>
+                    <div class="cal-day streak">22</div>
+                    <div class="cal-day streak">23</div>
+                    <div class="cal-day today-marked">24 📍</div>
+                    <div class="cal-day future">25</div>
+                    <div class="cal-day future">26</div>
+                </div>
+                <p class="calendar-note">📍 <b>24-May (Bugun)</b> — Odatlar trekeri bo'yicha natija 83% fathi!</p>
+            </div>
+        </div>
+    </div>
+     <li><a href="index.html" class="active"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="./statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="./malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="./kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+ <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Sarlavha va teglar */
+.top-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #5850ec;
+    background: #eef2ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.sub-title {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Progress ro'yxati */
+.progress-list-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.sb-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #374151;
+    font-weight: 600;
+}
+
+/* Kategoriya ro'yxati */
+.category-stat-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.category-stat-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    background: #f9fafb;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* Yutuqlar gridi */
+.achievements-grid-stat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.ach-item-stat {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 14px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.ach-icon {
+    font-size: 24px;
+    background: #eef2ff;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.ach-item-stat strong {
+    font-size: 14px;
+    color: #111827;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.ach-item-stat p {
+    font-size: 12px;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Pastki banner */
+.bottom-intizom-banner {
+    background: #5850ec;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bib-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.bib-icon {
+    font-size: 24px;
+}
+
+.bib-left strong {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.bib-left p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.btn-white {
+    background: white;
+    color: #5850ec;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 12px;
+    white-space: nowrap;
+}

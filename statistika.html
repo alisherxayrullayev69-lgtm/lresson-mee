@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistika va Tahlil – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./statistika.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="statistika.html" class="active"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="sozlamalar.html"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <!-- Tepa qidiruv va profil paneli -->
+            <header class="top-header-kr">
+                <div class="header-search">
+                    <input type="text" placeholder="Statistika, vazifalar yoki hisobotlarni qidirish...">
+                </div>
+                <div class="header-right">
+                    <span class="streak-badge">🔥 14 kunlik seriya</span>
+                    <a href="kunlik-rejalar.html" class="btn-primary" style="text-decoration: none;">+ Yangi vazifa</a>
+                    <div class="user-profile">
+                        <div class="avatar">SA</div>
+                        <div class="user-info">
+                            <span class="name">Sardor Alimov</span>
+                            <span class="role">Faol a'zo</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sarlavha paneli -->
+            <div class="page-title-row">
+                <div>
+                    <span class="top-tag">📈 CHUQURLASHTIRILGAN TAHLIL</span>
+                    <h1>Umumiy statistika va ko'rsatkichlar</h1>
+                    <p class="sub-title">Shaxsiy rivojlanishingiz, vaqt taqsimoti va samaradorlik darajangizning to'liq hisoboti.</p>
+                </div>
+                <div class="action-buttons">
+                    <div class="month-selector">
+                        <span>📅 May, 2024 (Oylik hisobot)</span>
+                    </div>
+                    <button class="btn-primary-lg" onclick="alert('Hisobot muvaffaqiyatli yuklab olindi!')">📥 PDF Eksport</button>
+                </div>
+            </div>
+
+            <!-- Asosiy 4 ta katta statistika kartasi -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Oylik Unumdorlik</span>
+                        <span class="icon-circle">🎯</span>
+                    </div>
+                    <h2>88%</h2>
+                    <p><span class="green-text">+4.2%</span> o'tgan oyga nisbatan</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Jami Sarflangan Vaqt</span>
+                        <span class="icon-circle">⏱️</span>
+                    </div>
+                    <h2>142 soat</h2>
+                    <p><span class="purple-text">Kuniga o'rtacha</span> ~5 soat</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Bajarilgan Topshiriqlar</span>
+                        <span class="icon-circle">✅</span>
+                    </div>
+                    <h2>312 ta</h2>
+                    <p><span class="green-text">92%</span> muvaffaqiyatli yakun</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Intizom Indeksi</span>
+                        <span class="icon-circle">🔥</span>
+                    </div>
+                    <h2>9.4 / 10</h2>
+                    <p>A'lo darajadagi barqarorlik</p>
+                </div>
+            </div>
+
+            <!-- O'rta qism: Haftalik dinamika va Vaqt taqsimoti -->
+            <div class="content-grid" style="margin-bottom: 25px;">
+                <div class="section-box">
+                    <h3>Haftalik unumdorlik dinamikasi (May 2024)</h3>
+                    <p class="box-desc">Haftalar kesimida vazifalar bajarilishi va samaradorlik grafigi</p>
+                    
+                    <div class="progress-list-stat">
+                        <div class="stat-bar-item">
+                            <div class="sb-label"><span>1-hafta (1 - 7 May)</span> <strong>82%</strong></div>
+                            <div class="progress-bar"><div class="fill" style="width: 82%;"></div></div>
+                        </div>
+                        <div class="stat-bar-item">
+                            <div class="sb-label"><span>2-hafta (8 - 14 May)</span> <strong>90%</strong></div>
+                            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-bar-item">
+                            <div class="sb-label"><span>3-hafta (15 - 21 May)</span> <strong>85%</strong></div>
+                            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-bar-item">
+                            <div class="sb-label"><span>4-hafta (22 - 28 May)</span> <strong>94%</strong></div>
+                            <div class="progress-bar"><div class="fill" style="width: 94%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-box">
+                    <h3>Yo'nalishlar bo'yicha vaqt taqsimoti</h3>
+                    <p class="box-desc">Qaysi sohalarga ko'proq vaqt ajratilgani</p>
+                    <ul class="category-stat-list">
+                        <li>
+                            <span>💻 IT va Dasturlash (Frontend/React)</span>
+                            <strong>45% (64 soat)</strong>
+                        </li>
+                        <li>
+                            <span>📚 Til o'rganish (IELTS / Ingliz tili)</span>
+                            <strong>25% (35 soat)</strong>
+                        </li>
+                        <li>
+                            <span>🏃 Salomatlik va Sport (Badantarbiya)</span>
+                            <strong>15% (21 soat)</strong>
+                        </li>
+                        <li>
+                            <span>💰 Moliya va Shaxsiy reja</span>
+                            <strong>15% (22 soat)</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pastki qo'shimcha batafsil tahlil bloki -->
+            <div class="section-box" style="margin-bottom: 25px;">
+                <h3>🏆 Oyning eng muhim yutuqlari va rekordlari</h3>
+                <p class="box-desc">Joriy oydagi shaxsiy samaradorlik cho'qqilari</p>
+                
+                <div class="achievements-grid-stat">
+                    <div class="ach-item-stat">
+                        <span class="ach-icon">🔥</span>
+                        <div>
+                            <strong>Eng uzun uzluksiz seriya</strong>
+                            <p>Kitob mutolaasi va odatlar bo'yicha ketma-ket 28 kunlik natija qayd etildi.</p>
+                        </div>
+                    </div>
+                    <div class="ach-item-stat">
+                        <span class="ach-icon">⚡</span>
+                        <div>
+                            <strong>Eng yuqori unumdor kun</strong>
+                            <p>Chorshanba kuni 92% samaradorlik bilan oy rekordi yangilandi.</p>
+                        </div>
+                    </div>
+                    <div class="ach-item-stat">
+                        <span class="ach-icon">🎯</span>
+                        <div>
+                            <strong>Maqsadlar bajarilishi</strong>
+                            <p>Rejalashtirilgan 8 ta shaxsiy maqsadning 3 tasi 100% muvaffaqiyatli yakunlandi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eng pastki banner -->
+            <div class="bottom-intizom-banner">
+                <div class="bib-left">
+                    <span class="bib-icon">💡</span>
+                    <div>
+                        <strong>Statistika bo'yicha sun'iy intellekt tahlili</strong>
+                        <p>"Sizning intizomingiz o'tgan haftaga nisbatan 6.2% ga o'sdi. Ertalabki vaqtni yanada unumli o'tkazish orqali natijani 95% ga chiqarishingiz mumkin."</p>
+                    </div>
+                </div>
+                <a href="odatlar.html" class="btn-white" style="text-decoration: none;">Odatlarni ko'rish</a>
+            </div>
+        </main>
+    </div>
+     <li><a href="index.html" class="active"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="./statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="./malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="./kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+ <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

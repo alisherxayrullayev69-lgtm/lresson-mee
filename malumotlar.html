@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foydali ma'lumotlar va Kutubxona – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="malumotlar.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="malumotlar.html" class="active"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="sozlamalar.html"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <!-- Tepa qidiruv paneli -->
+            <header class="top-header-kr">
+                <div class="header-search">
+                    <input type="text" placeholder="Kitoblar, maqolalar yoki qo'llanmalarni qidirish...">
+                </div>
+                <div class="header-right">
+                    <span class="streak-badge">🔥 14 kunlik seriya</span>
+                    <a href="kunlik-rejalar.html" class="btn-primary" style="text-decoration: none;">+ Yangi vazifa</a>
+                    <div class="user-profile">
+                        <div class="avatar">SA</div>
+                        <div class="user-info">
+                            <span class="name">Sardor Alimov</span>
+                            <span class="role">Faol a'zo</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sarlavha paneli -->
+            <div class="page-title-row">
+                <div>
+                    <span class="top-tag">📚 BILIMLAR MARKAZI</span>
+                    <h1>Foydali ma'lumotlar va Kutubxona</h1>
+                    <p class="sub-title">Shaxsiy rivojlanish, vaqt boshqaruvini yaxshilash va IT sohasini o'rganish uchun tavsiya etilgan manbalar.</p>
+                </div>
+                <div class="action-buttons">
+                    <div class="month-selector">
+                        <span>🔍 Barcha kategoriyalar</span>
+                    </div>
+                    <button class="btn-primary-lg" onclick="alert('Yangi material qo\'shish oynasi ochildi!')">+ Material qo'shish</button>
+                </div>
+            </div>
+
+            <!-- Filtr tablari -->
+            <div class="tabs-row" style="margin-bottom: 20px;">
+                <div class="tab-list">
+                    <span class="tab active">Barchasi (9)</span>
+                    <span class="tab">Kitoblar (3)</span>
+                    <span class="tab">Maqolalar (3)</span>
+                    <span class="tab">Qo'llanmalar (3)</span>
+                </div>
+            </div>
+
+            <!-- Resurslar Gridi (Katta kartalar) -->
+            <div class="resources-grid-main">
+                <!-- 1-Karta -->
+                <div class="resource-card-item">
+                    <div class="rc-top">
+                        <span class="res-tag purple">📚 Kitob tavsiyasi</span>
+                        <span class="rc-time">⏱ 4 soat o'qish</span>
+                    </div>
+                    <h3>Atom Odatlar (Atomic Habits)</h3>
+                    <p>Jeyms Klir tomonidan yozilgan kichik odatlar orqali katta va barqaror natijalarga erishish bo'yicha dunyodagi eng mashhur qo'llanma.</p>
+                    <div class="rc-foot">
+                        <span class="rc-author">✍️ James Clear</span>
+                        <a href="https://ziyouz.uz" target="_blank" class="res-link">Mutolaa qilish →</a>
+                    </div>
+                </div>
+
+                <!-- 2-Karta -->
+                <div class="resource-card-item">
+                    <div class="rc-top">
+                        <span class="res-tag blue">⏱ Vaqt Boshqaruvi</span>
+                        <span class="rc-time">⏱ 15 daqiqa</span>
+                    </div>
+                    <h3>Pomodoro Texnikasi va Diqqatni Jamlash</h3>
+                    <p>25 daqiqalik intensiv ishlash va 5 daqiqalik tanaffuslar yordamida charchamasdan yuqori unumdorlikka erishish sirlari.</p>
+                    <div class="rc-foot">
+                        <span class="rc-author">✍️ GrowUp Team</span>
+                        <a href="#" class="res-link" onclick="alert('Qo\'llanma ochildi!')">Batafsil o'qish →</a>
+                    </div>
+                </div>
+
+                <!-- 3-Karta -->
+                <div class="resource-card-item">
+                    <div class="rc-top">
+                        <span class="res-tag green">💡 Maqola</span>
+                        <span class="rc-time">⏱ 20 daqiqa</span>
+                    </div>
+                    <h3>Chuqur ish (Deep Work) uslubi</h3>
+                    <p>Zamonaviy chalg'ituvchi omillar (ijtimoiy tarmoqlar) davrida diqqatni jamlagan holda professional darajada ishlash ko'nikmasi.</p>
+                    <div class="rc-foot">
+                        <span class="rc-author">✍️ Cal Newport</span>
+                        <a href="#" class="res-link" onclick="alert('Maqola ochildi!')">Batafsil o'qish →</a>
+                    </div>
+                </div>
+
+                <!-- 4-Karta -->
+                <div class="resource-card-item">
+                    <div class="rc-top">
+                        <span class="res-tag orange">💻 Dasturlash / IT</span>
+                        <span class="rc-time">⏱ 6 soat</span>
+                    </div>
+                    <h3>Frontend arxitekturasi va React</h3>
+                    <p>Zamonaviy veb-ilovalarni yaratish, komponentlar tuzilishi va Clean Code tamoyillari bo'yicha amaliy qo'llanma.</p>
+                    <div class="rc-foot">
+                        <span class="rc-author">✍️ Senior Devs</span>
+                        <a href="#" class="res-link" onclick="alert('Kurs materiallari ochildi!')">Kursni ko'rish →</a>
+                    </div>
+                </div>
+
+                <!-- 5-Karta -->
+                <div class="resource-card-item">
+                    <div class="rc-top">
+                        <span class="res-tag purple">🧠 Psixologiya</span>
+                        <span class="rc-time">⏱ 3 soat</span>
+                    </div>
+                    <h3>Miya fitnesiga oid 10 ta oltin qoida</h3>
+                    <p>Xotirani kuchaytirish, tez o'rganish va yangi ma'lumotlarni uzoq muddatli xotirada saqlab qolish usullari.</p>
+                    <div class="rc-foot">
+                        <span class="rc-author">✍️ Dr. Andrew Huberman</span>
+                        <a href="#" class="res-link" onclick="alert('Maqola ochildi!')">Mutolaa qilish →</a>
+                    </div>
+                </div>
+
+                <!-- 6-Karta -->
+                <div class="resource-card-item">
+                    <div class="rc-top">
+                        <span class="res-tag blue">💰 Moliya</span>
+                        <span class="rc-time">⏱ 2 soat</span>
+                    </div>
+                    <h3>Shaxsiy byudjet va jamg'arma strategiyasi</h3>
+                    <p>Daromadlarni to'g'ri taqsimlash, ortiqcha xarajatlardan voz kechish va avtomobil yoki uy uchun jamg'arma yig'ish yo'llari.</p>
+                    <div class="rc-foot">
+                        <span class="rc-author">✍️ Bodo Schäfer</span>
+                        <a href="#" class="res-link" onclick="alert('Qo\'llanma ochildi!')">Batafsil o'qish →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eng pastki tavsiya banneri -->
+            <div class="bottom-intizom-banner" style="margin-top: 25px;">
+                <div class="bib-left">
+                    <span class="bib-icon">💡</span>
+                    <div>
+                        <strong>Kun tavsiyasi</strong>
+                        <p>"Bilishning o'zi yetarli emas, uni qo'llash kerak; istashning o'zi yetarli emas, harakat qilish kerak." — Iogann Volfgang fon Gyote</p>
+                    </div>
+                </div>
+                <a href="kunlik-rejalar.html" class="btn-white" style="text-decoration: none;">Rejalarga o'tish</a>
+            </div>
+        </main>
+    </div>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

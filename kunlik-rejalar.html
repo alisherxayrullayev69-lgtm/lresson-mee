@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunlik rejalar – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kunlik-rejalar.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html" class="active"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="#"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="#"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="#"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="#"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM (MAIN CONTENT) -->
+        <main class="main-content">
+            <!-- Tepa panel -->
+            <header class="top-header-kr">
+                <div class="header-search">
+                    <input type="text" placeholder="Vazifalar, maqsadlar yoki maolalarni qidirish...">
+                </div>
+                <div class="header-right">
+                    <span class="streak-badge">🔥 14 kunlik seriya</span>
+                    <button class="btn-primary">+ Yangi vazifa</button>
+                    <div class="user-profile">
+                        <div class="avatar">SA</div>
+                        <div class="user-info">
+                            <span class="name">Sardor Alimov</span>
+                            <span class="role">Faol a'zo</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sarlavha va boshqaruv tugmalari -->
+            <div class="page-title-row">
+                <div>
+                    <h1>Kunlik rejalar va vaqt boshqaruvi</h1>
+                    <p class="sub-title">Har bir kuningizni rejalashtiring, ustuvorliklarni belgilang va barqaror unumdorlikni ta'minlang.</p>
+                </div>
+                <div class="action-buttons">
+                    <div class="month-selector">
+                        <button>&lt;</button>
+                        <span>May 2024</span>
+                        <button>&gt;</button>
+                    </div>
+                    <button class="btn-outline">📅 Bugungi kunga qaytish</button>
+                    <button class="btn-primary-lg">+ Yangi vazifa yaratish</button>
+                </div>
+            </div>
+
+            <!-- Kun unumdorligi banneri -->
+            <div class="productivity-banner">
+                <div class="banner-left">
+                    <div class="check-circle">✓</div>
+                    <div>
+                        <h3>Tanlangan kun unumdorligi: 80% <span class="badge-active">Faol kun</span></h3>
+                        <p>5 ta belgilangan vazifadan 4 tasi muvaffaqiyatli yakunlandi. So'nggi qadam qoldi!</p>
+                    </div>
+                </div>
+                <div class="banner-right">
+                    <div class="progress-info">
+                        <span>Progress ko'rsatkich:</span>
+                        <strong>4 / 5 vazifa</strong>
+                    </div>
+                    <div class="progress-bar-banner">
+                        <div class="fill" style="width: 80%;"></div>
+                    </div>
+                    <span class="goal-text">Kunlik maqsadga yetishish arafasida</span>
+                </div>
+            </div>
+
+            <!-- Asosiy 2 ustunli tuzilma -->
+            <div class="kr-grid">
+                <!-- CHAP USTUN (Taqvim, Filtrlar, Iqtibos) -->
+                <div class="kr-left-col">
+                    <!-- Oylik Taqvim -->
+                    <div class="card-box">
+                        <div class="card-head">
+                            <h4>Oylik Taqvim</h4>
+                            <span class="year-badge">2024</span>
+                        </div>
+                        <p class="card-sub">Kunni tanlab vazifalarni ko'ring</p>
+
+                        <div class="mini-calendar">
+                            <div class="cal-header">
+                                <span>Dush</span><span>Sesh</span><span>Chor</span><span>Pay</span><span>Jum</span><span>Shan</span><span>Yak</span>
+                            </div>
+                            <div class="cal-days">
+                                <span class="off">29</span><span class="off">30</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                                <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+                                <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+                                <span>20</span><span>21</span><span>22</span><span>23</span><span class="selected-day">24</span><span>25</span><span>26</span>
+                                <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+                            </div>
+                        </div>
+
+                        <div class="cal-legend">
+                            <span><i class="dot green"></i> 100% bajarildi</span>
+                            <span><i class="dot orange"></i> Qisman</span>
+                            <span><i class="dot gray"></i> Rejasiz</span>
+                        </div>
+                    </div>
+
+                    <!-- O'tgan kunlar tahlili -->
+                    <div class="info-blue-box">
+                        <span class="info-icon">ℹ️</span>
+                        <div>
+                            <strong>O'tgan kunlar tahlili</strong>
+                            <p>Siz o'tgan sanalar rejasini ko'rishingiz, xatolarni ko'zdan kechirishingiz va odatlarning rivojlanish grafigini tahlil qilishingiz mumkin.</p>
+                        </div>
+                    </div>
+
+                    <!-- Saralash & Filtrlar -->
+                    <div class="card-box">
+                        <h4>Saralash & Filtrlar</h4>
+                        <div class="filter-pills">
+                            <span class="pill active">Barchasi <small>5</small></span>
+                            <span class="pill">Bajarilganlar <small>4</small></span>
+                            <span class="pill">Bajarilmaganlar <small>1</small></span>
+                            <span class="pill">Kechikkanlar <small>0</small></span>
+                        </div>
+                    </div>
+
+                    <!-- Kundalik iqtibos -->
+                    <div class="quote-card">
+                        <div class="quote-img">
+                            <img src="https://picsum.photos/100/100" alt="Iqtibos rasmi">
+                        </div>
+                        <div>
+                            <span class="q-tag">KUNDALIK IQTIBOS</span>
+                            <p class="q-text">"Katta natijalar kichik intizomdan boshlanadi."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O'NG USTUN (Vazifalar ro'yxati) -->
+                <div class="kr-right-col">
+                    <div class="day-title-bar">
+                        <div>
+                            <h2>24 MAY — Juma kunlik rejasi <span class="badge-active">Bugun</span></h2>
+                            <p>Jami 6 ta rejalashtirilgan voqea va topshiriqlar</p>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-sm">📥 Eksport</button>
+                            <button class="btn-sm">👁 Ko'rinish</button>
+                        </div>
+                    </div>
+
+                    <!-- Ertalabki reja (06:00 - 10:00) -->
+                    <div class="time-section">
+                        <div class="time-header">
+                            <span>🟠 Ertalabki reja (06:00 - 10:00)</span>
+                            <span class="status-count">2/2 Bajarildi</span>
+                        </div>
+                        <div class="task-item done">
+                            <input type="checkbox" checked>
+                            <span class="time-text">06:30</span>
+                            <div class="task-detail">
+                                <span class="task-name line-through">Yugurish va kontrast dush</span>
+                                <div class="task-badges">
+                                    <span class="tb salomatlik">Salomatlik</span>
+                                    <span class="tb orange">O'rtacha</span>
+                                    <span class="tb green-bg">✓ Bajarildi</span>
+                                </div>
+                            </div>
+                            <div class="actions">✏️ 🔗 🗑️</div>
+                        </div>
+
+                        <div class="task-item done">
+                            <input type="checkbox" checked>
+                            <span class="time-text">08:00</span>
+                            <div class="task-detail">
+                                <span class="task-name line-through">Kunlik rejalarni ko'rib chiqish va rejalashtirish</span>
+                                <div class="task-badges">
+                                    <span class="tb blue">Rejalashtirish</span>
+                                    <span class="tb red">! Yuqori</span>
+                                    <span class="tb green-bg">✓ Bajarildi</span>
+                                </div>
+                            </div>
+                            <div class="actions">✏️ 🔗 🗑️</div>
+                        </div>
+                    </div>
+
+                    <!-- Kunduzgi asosiy ishlar (10:00 - 18:00) -->
+                    <div class="time-section">
+                        <div class="time-header">
+                            <span>🔵 Kunduzgi asosiy ishlar (10:00 - 18:00)</span>
+                            <span class="status-count">2/2 Bajarildi</span>
+                        </div>
+                        <div class="task-item done">
+                            <input type="checkbox" checked>
+                            <span class="time-text">10:00</span>
+                            <div class="task-detail">
+                                <span class="task-name line-through">GrowUp veb-ilovasi interfeysini yakunlash</span>
+                                <div class="task-badges">
+                                    <span class="tb gray">IT / Ish</span>
+                                    <span class="tb red">📌 Yuqori ustuvorlik</span>
+                                    <span class="tb green-bg">✓ Bajarildi</span>
+                                </div>
+                            </div>
+                            <div class="actions">✏️ 🔗 🗑️</div>
+                        </div>
+
+                        <div class="task-item done">
+                            <input type="checkbox" checked>
+                            <span class="time-text">14:00</span>
+                            <div class="task-detail">
+                                <span class="task-name line-through">Jamoaviy uchrashuv va sprint tahlili</span>
+                                <div class="task-badges">
+                                    <span class="tb purple">Muloqot</span>
+                                    <span class="tb orange">O'rtacha</span>
+                                    <span class="tb green-bg">✓ Bajarildi</span>
+                                </div>
+                            </div>
+                            <div class="actions">✏️ 🔗 🗑️</div>
+                        </div>
+                    </div>
+
+                    <!-- Kechki reja (19:00 - 23:00) -->
+                    <div class="time-section">
+                        <div class="time-header">
+                            <span>🟤 Kechki reja (19:00 - 23:00)</span>
+                            <span class="status-count">1 ta qoldi</span>
+                        </div>
+                        <div class="task-item pending">
+                            <input type="checkbox">
+                            <span class="time-text">19:00</span>
+                            <div class="task-detail">
+                                <span class="task-name">Ingliz tilida podkast eshitish va konspekt qilish</span>
+                                <div class="task-badges">
+                                    <span class="tb blue">Til o'rganish</span>
+                                    <span class="tb orange">O'rtacha</span>
+                                    <span class="tb dark-orange">⏳ Jarayonda</span>
+                                </div>
+                            </div>
+                            <div class="actions">✏️ 🔗 🗑️</div>
+                        </div>
+
+                        <div class="task-item pending">
+                            <input type="checkbox">
+                            <span class="time-text">21:30</span>
+                            <div class="task-detail">
+                                <span class="task-name">Shaxsiy kundalikka xulosa yozish</span>
+                                <div class="task-badges">
+                                    <span class="tb gray">Shaxsiy</span>
+                                    <span class="tb light-gray">Past ustuvorlik</span>
+                                    <span class="tb light-gray">⌛ Kutilmoqda</span>
+                                </div>
+                            </div>
+                            <div class="actions">✏️ 🔗 🗑️</div>
+                        </div>
+                    </div>
+
+                    <!-- Tezkor kiritish paneli -->
+                    <div class="quick-add-box">
+                        <div class="q-icon">⚡</div>
+                        <div>
+                            <strong>Kun davomida yana yangi g'oya tug'ildimi?</strong>
+                            <p>Vaqtingizni oqilona taqsimlash uchun darhol ro'yxatga kiriting.</p>
+                        </div>
+                        <button class="btn-primary">Tezkor kiritish</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

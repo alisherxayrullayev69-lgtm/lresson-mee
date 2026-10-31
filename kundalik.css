@@ -1,0 +1,128 @@
+/* Sarlavha va teglar */
+.top-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: #5850ec;
+    background: #eef2ff;
+    padding: 3px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.sub-title {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Ikki ustunli kundalik tuzilishi */
+.diary-grid-main {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    gap: 20px;
+}
+
+/* Textarea maydoni */
+.diary-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 13px;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.diary-textarea:focus {
+    border-color: #5850ec;
+    box-shadow: 0 0 0 3px rgba(88, 80, 236, 0.1);
+}
+
+/* Yozuvlar ro'yxati */
+.diary-entries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.diary-entry-card {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid #f3f4f6;
+    transition: transform 0.2s ease;
+}
+
+.diary-entry-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.de-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.diary-entry-card h4 {
+    font-size: 15px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.diary-entry-card p {
+    font-size: 12px;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+/* Pastki banner */
+.bottom-intizom-banner {
+    background: #5850ec;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bib-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.bib-icon {
+    font-size: 24px;
+}
+
+.bib-left strong {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.bib-left p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.btn-white {
+    background: white;
+    color: #5850ec;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 12px;
+    white-space: nowrap;
+}

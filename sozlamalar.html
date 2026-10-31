@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil va sozlamalar – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sozlamalar.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="kundalik.html"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="sozlamalar.html" class="active"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <!-- Tepa qidiruv paneli -->
+            <header class="top-header-kr">
+                <div class="header-search">
+                    <input type="text" placeholder="Sozlamalardan qidirish...">
+                </div>
+                <div class="header-right">
+                    <span class="streak-badge">🔥 14 kunlik seriya</span>
+                    <a href="kunlik-rejalar.html" class="btn-primary" style="text-decoration: none;">+ Yangi vazifa</a>
+                    <div class="user-profile">
+                        <div class="avatar">SA</div>
+                        <div class="user-info">
+                            <span class="name">Sardor Alimov</span>
+                            <span class="role">Faol a'zo</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sarlavha paneli -->
+            <div class="page-title-row">
+                <div>
+                    <span class="top-tag">⚙️ SHAXSIY SOZLAMALAR</span>
+                    <h1>Profil va sozlamalar</h1>
+                    <p class="sub-title">Shaxsiy hisobingiz, xavfsizlik va bildirishnoma sozlamalarini boshqaring.</p>
+                </div>
+            </div>
+
+            <!-- Asosiy 2 ustunli tuzilma -->
+            <div class="settings-grid-main">
+                
+                <!-- CHAP USTUN: Profil ma'lumotlari -->
+                <div class="settings-left-col">
+                    <div class="section-box">
+                        <h3>👤 Shaxsiy ma'lumotlar</h3>
+                        <p class="box-desc">Profilingiz va kontakt ma'lumotlaringizni yangilang</p>
+                        
+                        <div class="profile-avatar-upload">
+                            <div class="big-avatar">SA</div>
+                            <div>
+                                <button class="btn-sm" onclick="alert('Rasm tanlash oynasi ochildi!')">📷 Rasmni o'zgartirish</button>
+                                <p class="sub-text">PNG, JPG formatlar (max 2MB)</p>
+                            </div>
+                        </div>
+
+                        <form onsubmit="event.preventDefault(); alert('Profil ma\'lumotlari saqlandi!');">
+                            <div class="form-group-modal">
+                                <label>To'liq ism va familiya</label>
+                                <input type="text" value="Sardor Alimov" required>
+                            </div>
+
+                            <div class="form-group-modal">
+                                <label>Elektron pochta (Email)</label>
+                                <input type="email" value="sardor.alimov@example.com" required>
+                            </div>
+
+                            <div class="form-group-modal">
+                                <label>Telefon raqam</label>
+                                <input type="tel" value="+998 90 123 45 67">
+                            </div>
+
+                            <div class="form-group-modal">
+                                <label>Kasb / Soha</label>
+                                <input type="text" value="Frontend Dasturchi">
+                            </div>
+
+                            <button type="submit" class="btn-primary-lg" style="width: 100%;">O'zgarishlarni saqlash</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- O'NG USTUN: Xavfsizlik va Bildirishnomalar -->
+                <div class="settings-right-col">
+                    <!-- Parolni o'zgartirish -->
+                    <div class="section-box" style="margin-bottom: 20px;">
+                        <h3>🔒 Xavfsizlik va Parol</h3>
+                        <p class="box-desc">Hisobingiz xavfsizligini ta'minlash uchun parolni doimiy yangilab turing</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Parol muvaffaqiyatli yangilandi!');">
+                            <div class="form-group-modal">
+                                <label>Hozirgi parol</label>
+                                <input type="password" placeholder="••••••••" required>
+                            </div>
+
+                            <div class="form-group-modal">
+                                <label>Yangi parol</label>
+                                <input type="password" placeholder="••••••••" required>
+                            </div>
+
+                            <div class="form-group-modal">
+                                <label>Yangi parolni takrorlang</label>
+                                <input type="password" placeholder="••••••••" required>
+                            </div>
+
+                            <button type="submit" class="btn-outline" style="width: 100%;">Parolni yangilash</button>
+                        </form>
+                    </div>
+
+                    <!-- Bildirishnomalar sozlamasi -->
+                    <div class="section-box">
+                        <h3>🔔 Bildirishnomalar (Notifications)</h3>
+                        <p class="box-desc">Platformadan keladigan eslatmalarni sozlang</p>
+
+                        <div class="toggle-list">
+                            <div class="toggle-item">
+                                <div>
+                                    <strong>Kunlik vazifalar eslatmasi</strong>
+                                    <p class="sub-text">Ertalabki va kechki rejalarni eslatib turish</p>
+                                </div>
+                                <input type="checkbox" checked class="toggle-switch">
+                            </div>
+
+                            <div class="toggle-item">
+                                <div>
+                                    <strong>Odatlar trekeri xabarlari</strong>
+                                    <p class="sub-text">Bajarilmagan odatlar haqida bildirishnoma</p>
+                                </div>
+                                <input type="checkbox" checked class="toggle-switch">
+                            </div>
+
+                            <div class="toggle-item">
+                                <div>
+                                    <strong>Haftalik statistika hisoboti</strong>
+                                    <p class="sub-text">Har dushanba kuni email orqali hisobot yuborish</p>
+                                </div>
+                                <input type="checkbox" class="toggle-switch">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Eng pastki banner -->
+            <div class="bottom-intizom-banner" style="margin-top: 25px;">
+                <div class="bib-left">
+                    <span class="bib-icon">🚀</span>
+                    <div>
+                        <strong>Barcha sahifalar to'liq tayyor!</strong>
+                        <p>Ajoyib! GrowUp platformasining barcha bo'limlari mukammal holatga keltirildi.</p>
+                    </div>
+                </div>
+                <a href="index.html" class="btn-white" style="text-decoration: none;">Bosh sahifaga qaytish</a>
+            </div>
+        </main>
+    </div>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

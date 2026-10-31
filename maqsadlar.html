@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening maqsadlarim – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="maqsadlar.css">
+</head>
+<body>
+
+    <!-- YASHIRIN CHECKBOX (Maqsad qo'shish modali uchun) -->
+    <input type="checkbox" id="modal-goal" class="modal-checkbox">
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html" class="active"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="#"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="#"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="#"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="#"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <!-- Sarlavha paneli -->
+            <div class="page-title-row">
+                <div>
+                    <span class="top-tag">🇵 RIVOJLANISH VA INTIZOM</span>
+                    <h1>Mening shaxsiy maqsadlarim</h1>
+                    <p class="sub-title">Orzularni aniq rejalarga, rejalarni esa natijalarga aylantiring. Kichik qadamlar buyuk marralar poydevoridir.</p>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-outline">🎛 Saralash</button>
+                    <!-- Yangi maqsad qo'shish tugmasi -->
+                    <label for="modal-goal" class="btn-primary-lg clickable-btn">🌐 + Yangi maqsad qo'shish</label>
+                </div>
+            </div>
+
+            <!-- Yuqori 4 ta ko'rsatkich kartalari -->
+            <div class="stats-grid-goals">
+                <div class="goal-stat-card">
+                    <div class="g-stat-head">
+                        <span>Jami maqsadlar</span>
+                        <span class="g-icon purple">🎯</span>
+                    </div>
+                    <h2>8 <small>ta yo'nalish</small></h2>
+                    <p class="g-sub">📅 2024-yil rejalari</p>
+                </div>
+
+                <div class="goal-stat-card">
+                    <div class="g-stat-head">
+                        <span>Faol jarayonda</span>
+                        <span class="g-icon orange">⚡</span>
+                    </div>
+                    <h2>5 <small>ta amalda</small></h2>
+                    <p class="g-sub">● Muntazam ish olib borilmoqda</p>
+                </div>
+
+                <div class="goal-stat-card">
+                    <div class="g-stat-head">
+                        <span>Erishilgan marralar</span>
+                        <span class="g-icon green">🏆</span>
+                    </div>
+                    <h2>3 <small>ta yutuq</small></h2>
+                    <p class="g-sub text-green">✓ 100% muvaffaqiyatli</p>
+                </div>
+
+                <div class="goal-stat-card">
+                    <div class="g-stat-head">
+                        <span>O'rtacha progres</span>
+                        <div class="radial-mini">64%</div>
+                    </div>
+                    <p class="g-sub text-purple">+12% o'tgan oydan</p>
+                </div>
+            </div>
+
+            <!-- Filtr tablari -->
+            <div class="tabs-row">
+                <div class="tab-list">
+                    <span class="tab active">Barcha maqsadlar (8)</span>
+                    <span class="tab">Oylik maqsadlar (2)</span>
+                    <span class="tab">Yillik maqsadlar [2024] (3)</span>
+                    <span class="tab">2 yillik istiqbol (2)</span>
+                    <span class="tab">5 yillik strategik (1)</span>
+                </div>
+                <div class="view-icons">
+                    <span class="v-icon active">🔲</span>
+                    <span class="v-icon">☰</span>
+                </div>
+            </div>
+
+            <!-- Maqsadlar gridi (4 ta katta karta) -->
+            <div class="goals-cards-grid">
+                
+                <!-- 1-Karta: IELTS -->
+                <div class="goal-card-main">
+                    <div class="gc-head">
+                        <div class="gc-tags">
+                            <span class="gt purple">Yillik maqsad</span>
+                            <span class="gt green">✦ Faol (Jadal suratda)</span>
+                        </div>
+                        <span class="more-dots">⋮</span>
+                    </div>
+                    <h2>Ingliz tilini mukammal o'rganish (IELTS 7.5+)</h2>
+                    
+                    <div class="gc-meta">
+                        <div><small>BOSHLANGAN</small><p>2024-yil Yanvar</p></div>
+                        <div><small>TUGASH MUDDATI</small><p>15-Iyul, 2024</p></div>
+                        <div><small>QOLGAN VAQT</small><p>52 kun</p></div>
+                    </div>
+
+                    <div class="gc-progress">
+                        <div class="gp-text"><span>Umumiy progress</span><strong>75%</strong></div>
+                        <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="gc-subtasks">
+                        <small class="sub-head">KICHIK BOSQICHLAR (MILESTONES):</small>
+                        <ul>
+                            <li><span class="st-check done">✓</span> Grammatika va asosiy bazani yangilash <span class="st-badge done">100%</span></li>
+                            <li><span class="st-check done">✓</span> 1,500 ta akademik so'z boyligini o'zlashtirish <span class="st-badge done">100%</span></li>
+                            <li><span class="st-check active">●</span> Har kuni 1 ta Writing Essay yozish va tahlil qilish <span class="st-badge active">50%</span></li>
+                            <li><span class="st-check active">●</span> Speaking bo'yicha haftalik repetitor bilan mashq... <span class="st-badge active">60%</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="gc-foot">
+                        <span>✓ 4 bosqichdan 2 tasi to'liq bajarildi</span>
+                        <button class="btn-sm-link">Yangilash →</button>
+                    </div>
+                </div>
+
+                <!-- 2-Karta: IT va Frontend -->
+                <div class="goal-card-main">
+                    <div class="gc-head">
+                        <div class="gc-tags">
+                            <span class="gt purple">2 yillik istiqbol</span>
+                            <span class="gt blue">💼 Karyera</span>
+                        </div>
+                        <span class="more-dots">⋮</span>
+                    </div>
+                    <h2>IT sohasida yetakchi Frontend mutaxassis bo'lish</h2>
+
+                    <div class="gc-image-banner">
+                        <img src="https://picsum.photos/300/100" alt="Frontend">
+                        <div class="gib-info">
+                            <small>MAQSAD MUDDATI</small>
+                            <strong>2025-yil Dekabr (Global market)</strong>
+                            <p>Maqsad: Senior darajasiga chiqish va xalqaro remote ja...</p>
+                        </div>
+                    </div>
+
+                    <div class="gc-progress">
+                        <div class="gp-text"><span>Umumiy progress</span><strong>60%</strong></div>
+                        <div class="progress-bar"><div class="fill" style="width: 60%;"></div></div>
+                    </div>
+
+                    <div class="gc-subtasks">
+                        <small class="sub-head">BOSQICHLAR VA TEKNOLOGIYALAR:</small>
+                        <ul>
+                            <li><span class="st-check done">✓</span> JavaScript chuqurlashtirilgan (Async, Proto...) <span class="st-badge done">Tugatildi</span></li>
+                            <li><span class="st-check done">✓</span> React & Next.js 14 real-biznes loyihalar <span class="st-badge done">Tugatildi</span></li>
+                            <li><span class="st-check orange">⏳</span> Shaxsiy portfolio va Open-source kutubxo... <span class="st-badge orange">Jarayonda</span></li>
+                            <li><span class="st-check gray">⌛</span> Xalqaro kompaniyalarga rezyume va ariza... <span class="st-badge gray">Kutilmoqda</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="gc-foot">
+                        <span>&lt;/&gt; Texnik stek to'liq shakllantirilgan</span>
+                        <button class="btn-sm-link">Yangilash →</button>
+                    </div>
+                </div>
+
+                <!-- 3-Karta: Avtomobil -->
+                <div class="goal-card-main">
+                    <div class="gc-head">
+                        <div class="gc-tags">
+                            <span class="gt orange">Yillik maqsad (Moliyaviy)</span>
+                            <span class="gt yellow">🎯 Jamg'arma</span>
+                        </div>
+                        <span class="more-dots">⋮</span>
+                    </div>
+                    <h2>Shaxsiy avtomobil sotib olish (Chevrolet Tracker / Onix)</h2>
+
+                    <div class="money-box">
+                        <div class="mb-left">
+                            <small>To'plangan jamg'arma summasi</small>
+                            <h3>$9,000 <span>/ $20,000 reja</span></h3>
+                        </div>
+                        <div class="mb-right">
+                            <small>Muddat</small>
+                            <strong>20-Noyabr, 2024</strong>
+                        </div>
+                    </div>
+
+                    <div class="gc-progress">
+                        <div class="gp-text"><span>Moliya zaxirasi: 45%</span><strong>$11,000 qoldi</strong></div>
+                        <div class="progress-bar"><div class="fill orange-fill" style="width: 45%;"></div></div>
+                    </div>
+
+                    <div class="gc-subtasks">
+                        <small class="sub-head">MOLIYA VA XARID BOSQICHLARI:</small>
+                        <ul>
+                            <li><span class="st-check done">✓</span> Boshlang'ich badalni yig'ish ($8,000 minima...) <span class="st-badge done">Bajarildi</span></li>
+                            <li><span class="st-check orange">⏳</span> Bozor narxlarini monitoring qilish va dilerla... <span class="st-badge orange">Jarayonda</span></li>
+                            <li><span class="st-check gray">⌛</span> Avtosalondan to'liq to'lov asosida buyurt... <span class="st-badge gray">Kutilmoqda</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="gc-foot">
+                        <span>📊 Oylik to'ldirish rejasi: $850 / oy</span>
+                        <button class="btn-sm-link">Hisobot →</button>
+                    </div>
+                </div>
+
+                <!-- 4-Karta: Magistratura -->
+                <div class="goal-card-main">
+                    <div class="gc-head">
+                        <div class="gc-tags">
+                            <span class="gt green">1 yillik maqsad</span>
+                            <span class="gt purple">🎓 Akademik</span>
+                        </div>
+                        <span class="more-dots">⋮</span>
+                    </div>
+                    <h2>Universitetda Magistratura bosqichiga kirish (Davlat granti)</h2>
+
+                    <div class="academic-grid">
+                        <div><small>YO'NALISH</small><p>Sun'iy intellekt</p></div>
+                        <div><small>QABUL MUDDATI</small><p>Avgust, 2024</p></div>
+                        <div><small>TARGET</small><p>Davlat granti</p></div>
+                    </div>
+
+                    <div class="gc-progress">
+                        <div class="gp-text"><span>Umumiy tayyorgarlik</span><strong>85%</strong></div>
+                        <div class="progress-bar"><div class="fill green-fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="gc-subtasks">
+                        <small class="sub-head">QABUL VA IMTIHON BOSQICHLARI:</small>
+                        <ul>
+                            <li><span class="st-check done">✓</span> Barcha diplom va rasmiy hujjatlarni tayyorlash <span class="st-badge done">100%</span></li>
+                            <li><span class="st-check done">✓</span> OAK ro'yxatidagi jurnalda 2 ta ilmiy maqola na... <span class="st-badge done">100%</span></li>
+                            <li><span class="st-check active">●</span> Mutaxassislik bo'yicha imtihon testlariga tayyor... <span class="st-badge active">85%</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="gc-foot">
+                        <span>⏳ Imtihonga 38 kun qoldi</span>
+                        <button class="btn-sm-link">Batafsil →</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pastki strategik banner -->
+            <div class="bottom-intizom-banner">
+                <div class="bib-left">
+                    <span class="bib-icon">💡</span>
+                    <div>
+                        <strong>Strategik intizom qoidasi</strong>
+                        <p>"Agar maqsadingizni qadamlarga bo'lmasangiz, u shunchaki orzulingizcha qoladi. Har bir kunlik kichik qadam katta marrani zabt etadi."</p>
+                    </div>
+                </div>
+                <button class="btn-white">Haftalik reja tuzish</button>
+            </div>
+        </main>
+    </div>
+
+
+    <!-- ========================================================== -->
+    <!-- MAQSAD YARATISH MODAL OYNASI -->
+    <!-- ========================================================== -->
+    <div class="modal-overlay" id="popup-goal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>🎯 Yangi shaxsiy maqsad qo'shish</h3>
+                <label for="modal-goal" class="close-btn">✕</label>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="event.preventDefault(); alert('Yangi maqsad muvaffaqiyatli saqlandi!');">
+                    <div class="form-group-modal">
+                        <label>Maqsad nomi</label>
+                        <input type="text" placeholder="Masalan: IELTS 7.5 sertifikatini olish..." required>
+                    </div>
+                    <div class="form-group-modal">
+                        <label>Maqsad turi / Muddat</label>
+                        <select>
+                            <option>Yillik maqsad (2024)</option>
+                            <option>2 yillik istiqbol</option>
+                            <option>5 yillik strategik</option>
+                            <option>Oylik maqsad</option>
+                        </select>
+                    </div>
+                    <div class="form-group-modal">
+                        <label>Yakunlanish sanasi</label>
+                        <input type="date" required>
+                    </div>
+                    <button type="submit" class="btn-submit-modal">Maqsadni saqlash</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+</html>

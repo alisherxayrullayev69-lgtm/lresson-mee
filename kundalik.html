@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaxsiy kundalik – GrowUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kundalik.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- CHAP MENYU (SIDEBAR) -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <span class="rocket">🚀</span>
+                <h2>GrowUp</h2>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="kunlik-rejalar.html"><span class="icon">📅</span> Kunlik rejalar</a></li>
+                <li><a href="maqsadlar.html"><span class="icon">🎯</span> Mening maqsadlarim</a></li>
+                <li><a href="odatlar.html"><span class="icon">⭐</span> Foydali odatlar</a></li>
+                <li><a href="statistika.html"><span class="icon">📊</span> Statistika</a></li>
+                <li><a href="malumotlar.html"><span class="icon">📁</span> Foydali ma'lumotlar</a></li>
+                <li><a href="kundalik.html" class="active"><span class="icon">📖</span> Shaxsiy kundalik</a></li>
+                <li><a href="sozlamalar.html"><span class="icon">⚙️</span> Profil va sozlamalar</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="eslatma-box">
+                    <p class="eslatma-title">💡 Eslatma</p>
+                    <p class="eslatma-text">Har kuni 1% o'sish!</p>
+                </div>
+                <a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+            </div>
+        </aside>
+
+        <!-- O'NG ASOSIY QISM -->
+        <main class="main-content">
+            <!-- Tepa qidiruv paneli -->
+            <header class="top-header-kr">
+                <div class="header-search">
+                    <input type="text" placeholder="Kundalik yozuvlarini qidirish...">
+                </div>
+                <div class="header-right">
+                    <span class="streak-badge">🔥 14 kunlik seriya</span>
+                    <a href="kunlik-rejalar.html" class="btn-primary" style="text-decoration: none;">+ Yangi vazifa</a>
+                    <div class="user-profile">
+                        <div class="avatar">SA</div>
+                        <div class="user-info">
+                            <span class="name">Sardor Alimov</span>
+                            <span class="role">Faol a'zo</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Sarlavha paneli -->
+            <div class="page-title-row">
+                <div>
+                    <span class="top-tag">📖 FIKRLAR VA XULOSALAR</span>
+                    <h1>Shaxsiy kundalik</h1>
+                    <p class="sub-title">Bugungi kuningiz qanday o'tdi? His-tuyg'ularingiz, yutuqlaringiz va kelajak uchun rejalaringizni yozib boring.</p>
+                </div>
+                <div class="action-buttons">
+                    <div class="month-selector">
+                        <span>📅 May, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asosiy ikki ustunli tuzilma -->
+            <div class="diary-grid-main">
+                <!-- CHAP TARAF: Yangi yozuv yozish oynasi -->
+                <div class="section-box">
+                    <h3>✍️ Bugungi kun uchun yangi yozuv</h3>
+                    <p class="box-desc">Fikr va mulohazalaringizni qog'ozga (ekranga) tushuring</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Kundalik yozuvi muvaffaqiyatli saqlandi!');">
+                        <div class="form-group-modal" style="margin-top: 15px;">
+                            <label>Sarlavha</label>
+                            <input type="text" placeholder="Masalan: Ajoyib va unumdor kun..." required>
+                        </div>
+
+                        <div class="form-group-modal">
+                            <label>Kayfiyat holati</label>
+                            <select>
+                                <option>🔥 Ajoyib va energiya to'la</option>
+                                <option>⚡ Yaxshi va unumdor</option>
+                                <option>💡 O'rtacha / Fikrli</option>
+                                <option>🌧️ Charchagan / Dam olish kerak</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group-modal">
+                            <label>Kundalik matni</label>
+                            <textarea rows="6" class="diary-textarea" placeholder="Bugun nimalarga erishdingiz? Qanday qiyinchiliklarni yengib o'tdingiz? Nima o'rgandingiz?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary-lg" style="width: 100%;">Kundalikni saqlash</button>
+                    </form>
+                </div>
+
+                <!-- O'NG TARAF: O'tgan yozuvlar tarixi -->
+                <div class="diary-history-col">
+                    <div class="section-box">
+                        <div class="box-header">
+                            <h3>O'tgan kunlar yozuvlari</h3>
+                            <span class="sub-count">Jami 12 ta yozuv</span>
+                        </div>
+
+                        <div class="diary-entries-list">
+                            <div class="diary-entry-card">
+                                <div class="de-top">
+                                    <strong>📅 23-May, 2024</strong>
+                                    <span class="badge success">🔥 Ajoyib</span>
+                                </div>
+                                <h4>Frontend va arxitektura tahlili</h4>
+                                <p>Bugun GrowUp loyihasining asosiy sahifalari va ularning modallarini tugatdim. Juda ko'p narsa o'rgandim, ayniqsa CSS orqali modal yasash jarayoni yoqdi.</p>
+                            </div>
+
+                            <div class="diary-entry-card">
+                                <div class="de-top">
+                                    <strong>📅 22-May, 2024</strong>
+                                    <span class="badge warning">⚡ Unumdor</span>
+                                </div>
+                                <h4>IELTS va so'z boyligi</h4>
+                                <p>Akademik so'zlarni yodlashda yaxshi natijaga erishdim. Kechki payt 10 ming qadam yurish shartini bajarib, intizomni saqlab qoldim.</p>
+                            </div>
+
+                            <div class="diary-entry-card">
+                                <div class="de-top">
+                                    <strong>📅 21-May, 2024</strong>
+                                    <span class="badge success">🔥 Ajoyib</span>
+                                </div>
+                                <h4>Moliya va rejalashtirish</h4>
+                                <p>Shaxsiy jamg'arma bo'yicha oy rejasini bajarib kelmoqdaman. Maqsad sari dadil qadam tashlanmoqda.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eng pastki banner -->
+            <div class="bottom-intizom-banner" style="margin-top: 25px;">
+                <div class="bib-left">
+                    <span class="bib-icon">💡</span>
+                    <div>
+                        <strong>Kundalik yuritish foydasi</strong>
+                        <p>"Fikrlarini qog'ozga yozadigan insonlar o'z maqsadlariga yozmaydiganlarga qaraganda 42% ko'proq erishadilar."</p>
+                    </div>
+                </div>
+                <a href="maqsadlar.html" class="btn-white" style="text-decoration: none;">Maqsadlarni ko'rish</a>
+            </div>
+        </main>
+    </div>
+<a href="login.html" class="logout-link"><span class="icon">🚪</span> Chiqish</a>
+</body>
+
+</html>
